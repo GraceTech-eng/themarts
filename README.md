@@ -2,7 +2,7 @@
 
 # *The Marts Coders*
 
-Welcome to *The Marts Coders Headquarters* – a hub for aspiring developers to *learn coding, **build impactful projects, **earn certifications, and ultimately **secure amazing jobs*. Our mission is to position Kenya as a global tech hub through mentorship, groundbreaking projects, and innovative solutions.
+Welcome to *The Marts Coders Headquarters* – a hub for aspiring developers to *learn coding*, *build impactful projects*, *earn certifications*, and ultimately *secure amazing jobs*. Our mission is to position Kenya as a global tech hub through mentorship, groundbreaking projects, and innovative solutions.
 
 ---
 
