@@ -50,5 +50,5 @@ Join us in your coding journey! Visit our platform to:
 ## 🏢 *Contact Us*
 We'd love to hear from you! Reach out for inquiries, collaborations, or feedback:
 - *Website*: [www.themartscoders.com](http://www.themartscoders.com)
-- *Email*: info@themartscoders.com
+- *Email*: themartswriters@gmail.com
 
