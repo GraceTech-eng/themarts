@@ -1,81 +1,100 @@
-<DOCTYPE! html>
-    <html>
-        <head>
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <tittle>&copy;Coders</tittle>
-        <meta charset="UTF-8">
-        <meta name="author" content="GRACE EMMACULATE">
-        <meta name="descripition" content="The Marts coders page. For learning and improving coding skills">
-        <meta property="og:title" content="The Marts Coders Headquaters">
-        <meta property="og:type" content="website">
-        <meta proprety="og:url" content="http://www.themartscoders.com">
-        </head>
-        <style>
-            /*General Body styling*/
-            body{
-                background: linear-gradient(aqua, white);
-                color: black;
-                margin: 0;
-                padding: 0;
-                font-family: 'Times New Roman', Times, serif;
-                animation: gradientBG 4s infinite alternate;
-            }
-            /*divison styling*/
-            h1{
-                font-size: xx-large;
-                color:black;
-                text-align: center;
-                font-size: xx-large;
-            }
-            p{
-                text-align: center;
-                font-size: larger;
-            }
-            /*navigation styling*/
-            nav {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&copy;Coders</title>
+    <meta name="author" content="GRACE EMMACULATE">
+    <meta name="description" content="The Marts coders page. For learning and improving coding skills">
+    <meta property="og:title" content="The Marts Coders Headquarters">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.themartscoders.com">
+
+    <style>
+        /* General Body Styling */
+        body {
+            background: linear-gradient(aqua, white);
+            color: black;
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            animation: gradientBG 4s infinite alternate;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: rgb(70, 67, 67);
+            color: aliceblue;
+            text-align: center;
+            padding: 50px;
+            margin: 50px auto;
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        /* Section Title Styling */
+        h1 {
+            font-size: xx-large;
+            color: black;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-size: larger;
+        }
+
+        /* Navigation Styling */
+        nav {
             display: flex;
             justify-content: center;
-            margin: 50px 0;
-            padding: 30px;
+            margin: 30px 0;
+            padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
         nav button {
             margin: 0 10px;
             padding: 12px 25px;
             background-color: white;
-            color:rgb(27, 27, 151);
+            color: rgb(27, 27, 151);
             border: 2px solid white;
             border-radius: 5px;
             cursor: pointer;
-            font-size:xx-large;
+            font-size: large;
             transition: 0.3s ease;
         }
+
         nav button:hover {
             background-color: #4a148c;
             color: white;
             border-color: #4a148c;
         }
-            /*section styling*/
-        section{
-            display: none; /* Hidden by default */
+
+       
+        section {
+            display: none; 
             padding: 50px;
             margin: 20px auto;
-            max-width: 300px;
-            background-color:white;
-            border-radius: 8px;
+            max-width: 400px;
+            border-radius: 50px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             animation: fadeIn 0.7s ease-in-out;
         }
-        header{
-            background-color: rgb(70, 67, 67);
-            color: aliceblue;
-            justify-content: center;
-            padding: 50px;
-            margin: 50px;
-        
+
+     
+        img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 15px auto;
+            border: 5px solid black;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
-       
-        /*Animations*/
+
+        /* Animations */
         @keyframes fadeIn {
             from {
                 opacity: 0;
@@ -86,98 +105,174 @@
                 transform: translateY(0);
             }
         }
-        
-        </style>
-        <body>
-            <div>
-                <h1>Learn coding with The Marts</h1>
-                <h1>Build Projects</h1>
-                <h1>Earn certifications.</h1>
-                <h1>Get Job</h1>
-                <p>Our goal is to position Kenya as a global tech hub by mentoring upcoming developers,<br>contributing to groundbreaking projects, and innovating solutions that solve real-world challenges.</p>
+
+        /* Footer Styling */
+        footer {
+            background-color: rgb(152, 152, 163);
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1>Learn coding with The Marts</h1>
+        <h1>Build Projects</h1>
+        <h1>Earn Certifications</h1>
+        <h1>Get a Job</h1>
+        <p>Our goal is to position Kenya as a global tech hub by mentoring upcoming developers, 
+            contributing to groundbreaking projects, and innovating solutions that solve real-world challenges.</p>
+    </div>   
+
+    <nav>
+        <button onclick="showSection('Founders')">THE MARTS OFFICIALS</button>
+    </nav>
+
+    <div id="container">
+        <section id="Founders">
+            <div class="founders-container">
+                <div class="founder-card">
+                    <img src="img.Lupin.jpg" alt="Colince Lupin Profile Photo">
+                    <div class="card-content">
+                        <h1>COLINCE LUPIN</h1>
+                        <p>"In the wilderness of challenges, I rise with the strength of a wolf, led by the wisdom of Lupin."</p>
+                        <h2 class="title">THE MARTS CEO (Chief Executive Officer)</h2>
+                    </div>
+                </div>
+    
+                <div class="founder-card">
+                    <img src="img.Grace.jpg" alt="Grace Emmaculate Profile Photo">
+                    <div class="card-content">
+                        <h1>GRACE EMMACULATE</h1>
+                        <p>"Rise. Adapt. Conquer. Repeat."</p>
+                        <h2 class="title">COO (Chief Operating Officer)</h2>
+                    </div>
+                </div>
+    
+                <div class="founder-card">
+                    <img src="img.Victor.jpg" alt="Victor Martin Profile Photo">
+                    <div class="card-content">
+                        <h1>VICTOR MARTIN</h1>
+                        <p>"Of Pounds and Dollars"</p>
+                        <h2 class="title">CFO (Chief Financial Officer)</h2>
+                    </div>
+                </div>
             </div>
-            <nav>
-                <button onclick="showSection('Founders')">THE MARTS OFFICIALS</button>
-                
-            </nav>
-            <div id="container">
-              <section id="Founders">
-                <h1>COLINCE LUPIN</h1>
-                <p>"In the wilderness of challenges, I rise with the strength of a wolf, led by the wisdom of Lupin."</p>
-                <h2 style="font-size: larger;color: blue;text-align: center;">THE MARTS CEO (Chief Executive Officer)</h2>
-                <img src="img.Lupin.jpg" alt="Profile Photo" style="width: 250px;
-                height: 250px;
-                border-radius: 250px;
-                justify-content: center;
-                object-fit: cover;
-                margin: 15px auto;
-                display: block;
-                border: 5px solid black;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);"><br>
-                <h1>GRACE EMMACULATE</h1>
-                <p>"Rise. Adapt. Conquer. Repeat."</p>
-                <h2 style="font-size: larger;color: blue;text-align: center;">COO(Chief Operating Officer)</h2>
-                <img src="img.Grace.jpg" alt="Profile Photo" style="width: 300px;
-                height: 300px;
-                border-radius: 300px;
-                justify-content: center;
-                object-fit: cover;
-                margin: 15px auto;
-                display: block;
-                border: 5px solid black;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);"><br>
-                <h1>VICTOR MARTIN</h1>
-                <p>"Of Pounds and Dollars"</p>
-                <h2 style="font-size: larger;color: blue;text-align: center;">CFO (Chief Financial Officer) </h2>
-                <img src="img.Victor.jpg" alt="Profile Photo" style="width: 300px;
-                height: 300px;
-                border-radius: 300px;
-                justify-content: center;
-                object-fit: cover;
-                margin: 15px auto;
-                display: block;
-                border: 5px solid black;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);">
-              </section></div>
-            <header>
-            <p> Hello! Meet The Marts Coders,  top-tier Kenyan coders passionate about crafting innovative software solutions that push boundaries. With expertise in  Python, JavaScript, Java, CSS, C++ etc., we specialize in developing high-performance applications, solving complex problems, and creating impactful digital experiences.</p>
-
-            <p><em>💡 What Makes us Stand Out:</em></p>
-          <ol>
-            <br><li> Mastery in multiple programming languages</li>
-            <br><li>Experience in [Web Development, AI, Mobile Apps, Cybersecurity, etc.]</li>
-            <br><li>Winning team in [coding competitions, hackathons, and awards]</li>
-            <br><li>Contributed to open-source projects & tech communities</li>
-            <br><li>Passion for mentoring and uplifting Kenya's tech scene</li>
-          </ol>
-          </header>
-          <nav>
-            <button onclick="showSection('Sign In')">Get Started</button>
-            
-        </nav>
-        <section id="Sign In">
-            <h2 style="font-size:xx-large;text-align: center;">Sign In</h2>
-            <form id="Signing In">
-                <br><br><input type="text" name="name" placeholder="Enter Full Name" required>
-                <br><br><input type="email" name="email" placeholder="Enter Email address" required>
-                <br><br><input name="text" placeholder="Input Password" required>
-                <br><br><button type="submit">Submit</button>
-            </form>
         </section>
-        <script>
-            function showSection(sectionId) {
-              document.querySelectorAll('section').forEach(section => section.style.display = 'none');
-              document.getElementById(sectionId).style.display = 'block';
+    </div>
+    
+    <style>
+        /* Full-width container */
+        .founders-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px; /* Small gap for better spacing */
+            padding: 20px;
+            width: 100%;
+        }
+    
+        /* Rectangular, equal-sized cards */
+        .founder-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 350px; /* Ensures equal size */
+            height: 450px; /* Keeps all cards uniform */
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    
+        /* Hover effect for interactivity */
+        .founder-card:hover {
+            transform: scale(1.05);
+        }
+    
+        .founder-card img {
+            width: 100%;
+            height: 60%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    
+        .card-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px;
+        }
+    
+        .title {
+            color: blue;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+    
+        /* Responsive layout */
+        @media (max-width: 992px) {
+            .founders-container {
+                flex-wrap: wrap;
+                justify-content: center;
             }
-        </script>
-          
+            .founder-card {
+                max-width: 100%;
+            }
+        }
+    </style>
+    
+    <header>
+        <p>Hello! Meet The Marts Coders, top-tier Kenyan coders passionate about crafting innovative software solutions that push boundaries. 
+            With expertise in Python, JavaScript, Java, CSS, C++, etc., we specialize in developing high-performance applications, solving 
+            complex problems, and creating impactful digital experiences.</p>
 
+        <p><em>💡 What Makes Us Stand Out:</em></p>
+        <ul>
+            <li>Mastery in multiple programming languages</li>
+            <li>Experience in Web Development, AI, Mobile Apps, Cybersecurity, etc.</li>
+            <li>Winning team in coding competitions, hackathons, and awards</li>
+            <li>Contributed to open-source projects & tech communities</li>
+            <li>Passion for mentoring and uplifting Kenya's tech scene</li>
+        </ul>
+    </header>
 
+    <nav>
+        <button onclick="showSection('SignIn')">Get Started</button>
+    </nav>
 
+    <section id="SignIn">
+        <h2 style="text-align: center;">Sign In</h2>
+        <form id="SigningIn">
+            <label for="name">Full Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter Full Name" required><br><br>
 
+            <label for="email">Email Address</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter Email Address" required><br><br>
 
-             <footer style="background-color: rgb(152, 152, 163);text-align: center;padding: 5px;">
-                <p>@THE MARTS CODERS &gt;&gt;&gt;Attached to Machines</p>
-            </footer>
-        </body>
-    </html>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" placeholder="Input Password" required><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('section').forEach(section => section.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+
+    <footer>
+        <p>@THE MARTS CODERS &gt;&gt;&gt; Attached to Machines</p>
+    </footer>
+
+</body>
+</html>
