@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>&copy;Coders</title>
+    <title>The Marts webpage</title>
     <meta name="author" content="GRACE EMMACULATE">
     <meta name="description" content="The Marts coders page. For learning and improving coding skills">
     <meta property="og:title" content="THE MARTS COMPANY">
@@ -15,7 +15,7 @@
     <style>
       
         body {
-            background: linear-gradient(aqua, white);
+            background-color: rgb(252, 247, 247);
             color: black;
             margin: 0;
             padding: 0;
@@ -25,12 +25,13 @@
 
      
         header {
-            background: linear-gradient(90deg, #0077c2, #005fa3);
+            background: linear-gradient(blue,rgb(148, 145, 145));
             color: white;
-            text-align: center;
+            text-align: left;
             padding: 50px;
             margin: 50px auto;
             width: 80%;
+            height: auto;
             border-radius: 10px;
         }
 
@@ -43,8 +44,8 @@
         }
 
         p {
-            text-align: center;
-            font-size: larger;
+            text-align: left;
+            font-size: medium;
             font-weight: 400;
         }
 
@@ -59,7 +60,7 @@
         nav button {
             margin: 0 10px;
             padding: 12px 25px;
-            background-color: #0077c2;
+            background-color: blue;
             color: white;
             border: none;
             border-radius: 5px;
@@ -69,7 +70,7 @@
         }
 
         nav button:hover {
-            background-color: #005fa3;
+            background-color:rgb(12, 12, 76);
             transform: scale(1.05);
         }
 
@@ -79,14 +80,13 @@
             margin: 20px auto;
             max-width: 400px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .founders-container-horizontal {
             display: flex;
             flex-direction: row;
-            gap: 20px;
-            padding: 20px;
+            gap: 50px;
+            padding: 50px;
             justify-content: center;
             align-items: center;
         }
@@ -98,6 +98,8 @@
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
             width: 400px;
             text-align: center;
+            width: 480px;
+            height: 480px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             animation: fadeIn 1s ease-in-out;
         }
@@ -112,36 +114,46 @@
             height: 200px;
             object-fit: cover;
             border-radius: 50%;
-            border: 5px solid #0077c2;
+            border: 5px solid black;
             margin-bottom: 20px;
         }
 
         .card-content h1 {
-            font-size: 2em;
-            color: #333;
+            font-size: large;
+            color:black;
             margin-bottom: 10px;
         }
 
         .title {
-            color: #005fa3;
+            color: blue;
             font-size: 1.5em;
             font-weight: bold;
             margin-bottom: 20px;
         }
 
         .card-content p {
-            font-size: 1.2em;
-            color: #555;
+            font-size: medium;
+            color: black;
             line-height: 1.8;
         }
-
-        /* Footer Styling */
+        #SignIn {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 250px;
+            height: 250px;
+            background-color:rgb(134, 134, 180);
+            border-radius: 8px;
+            box-shadow:rgb(15, 5, 5);
+            animation: fadeIn 1s ease-in-out;
+        }
+      /* Footer Styling */
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 10px;
             font-size: 0.9em;
+            justify-content: center;
         }
 
         footer p {
@@ -191,8 +203,8 @@
         <h1>Learn coding with The Marts</h1>
         <h1>Build Projects</h1>
         <h1>Earn Certifications</h1>
-        <h1>Get a Job</h1>
-        <p>Our goal is to position Kenya as a global tech hub by mentoring upcoming developers, 
+        <h1>Get Jobs</h1>
+        <p style="text-align: center;font-size: larger;">Our goal is to position Kenya as a global tech hub by mentoring upcoming developers, 
             contributing to groundbreaking projects, and innovating solutions that solve real-world challenges.</p>
     </div>   
 
@@ -207,7 +219,7 @@
                     <img src="img.Victor.jpg" alt="Victor Martin Profile Photo">
                     <div class="card-content">
                         <h1>VICTOR MARTIN</h1>
-                        <h2 class="title">Chief Financial Officer (CFO)</h2>
+                        <h2 class="title">Chief Financial Officer-CFO</h2>
                         <p>"Of Pounds and Dollars."</p>
                     </div>
                 </div>
@@ -215,7 +227,7 @@
                     <img src="img.Lupin.jpg" alt="Colince Lupin Profile Photo">
                     <div class="card-content">
                         <h1>COLINCE LUPIN</h1>
-                        <h2 class="title">Chief Executive Officer (CEO)</h2>
+                        <h2 class="title">Chief Executive Officer-CEO</h2>
                         <p>"In the wilderness of challenges, I rise with the strength of a wolf, led by the wisdom of Lupin."</p>
                     </div>
                 </div>
@@ -224,7 +236,7 @@
                     <img src="img.Grace.jpg" alt="Grace Emmaculate Profile Photo">
                     <div class="card-content">
                         <h1>GRACE EMMACULATE</h1> 
-                        <h2 class="title">Chief Operating Officer (COO)</h2>
+                        <h2 class="title">Chief Operating Officer-COO</h2>
                         <p>"Rise. Adapt. Conquer. Repeat."</p>
                     </div>
                 </div>
@@ -235,9 +247,18 @@
     </div>
 
     <header>
-        <p"Welcome to The Marts Coders - Innovating Software, Creating Impact".</p>
+        <p>Welcome to The Marts Coders Headquarters, a hub for aspiring developers to learn coding, build impactful projects, earn certifications, and ultimately secure amazing jobs. Our mission is to position Kenya as a global tech hub through mentorship, groundbreaking projects, and innovative solutions. </p>
+        <h2>🛠 What We Do</h2>
+        <p style="text-align: left;"><em>We specialize in:</em></p>
+      <ul>
+         </li>Teaching Coding Skills: Offering resources and mentorship to help developers improve.</li>
+         </li>Building Projects: Hands-on opportunities to build innovative, real-world solutions.</li>
+         </li>Certifications: Equipping developers with recognized credentials to boost their careers.</li>
+         </li>Career Support: Preparing developers to excel in their professional journeys.</li>
+     </ul>
 
-        <p><em>💡 What Makes Us Stand Out:</em></p>
+
+        <h2>💡 What Makes Us Stand Out:</h2>
         <ul>
             <li>Mastery in multiple programming languages</li>
             <li>Experience in Web Development, AI, Mobile Apps, Cybersecurity, etc.</li>
@@ -252,18 +273,13 @@
     </nav>
 
     <section id="SignIn">
-        <h2 style="text-align: center;">Sign In</h2>
-        <form id="SigningIn">
-            <label for="name">Full Name</label><br>
-            <input type="text" id="name" name="name" placeholder="Enter Full Name" required><br><br>
-
-            <label for="email">Email Address</label><br>
-            <input type="email" id="email" name="email" placeholder="Enter Email Address" required><br><br>
-
-            <label for="password">Password</label><br>
-            <input type="password" id="password" name="password" placeholder="Input Password" required><br><br>
-
-            <button type="submit">Submit</button>
+        <form>
+            <h3 style="text-align: center;font-size: x-large;">Sign In</h3>
+            
+            <br><input type="text" id="name" name="name" placeholder="Enter Full Name" required>
+           <br> <input type="email" id="email" name="email" placeholder="Enter Email Address" required>
+            <br><input type="password" id="password" name="password" placeholder="Input Password" required>
+            <br><br><button type="submit">Submit Details</button>
         </form>
     </section>
 
@@ -275,8 +291,8 @@
     </script>
 
     <footer>
-        <p>@THE MARTS CODERS &gt;&gt;&gt; Attached to Machines</p>
-        <p>Follow us on:
+        <p style="text-align: center;">@THE MARTS CODERS &gt;&gt;&gt; Attached to Machines</p>
+        <p style="text-align: center;">Follow us on:
             <a href="https://twitter.com/TheMartsCoders" target="_blank">Twitter</a>
             <a href="https://facebook.com/TheMartsCoders" target="_blank">Facebook</a>
             <a href="https://instagram.com/TheMartsCoders" target="_blank">Instagram</a>
