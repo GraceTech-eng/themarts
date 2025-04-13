@@ -13,56 +13,41 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
       
-        /* General Layout */
         body {
             background-color: black;
-            color: white;
+            color:white;
             margin: 0;
             padding: 0;
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
         }
-
-        .container {
-            max-width: 1200px; /* Limit the width of the content */
-            margin: 0 auto; /* Center the content */
-            padding: 20px; /* Add padding for spacing */
-        }
-
-        /* Image and Text Container */
         .image-text-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-            margin: 40px auto;
-            text-align: center;
-            max-width: 90%; /* Ensure responsiveness */
-        }
+          display: flex;
+          align-items:left; /* vertically center text with image */
+          gap: 15px; /* space between image and text */
+          margin: 40px;
+          }
 
         .image-text-container img {
-            width: 150px; /* Adjust size for better balance */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 8px;
-        }
+          width: 200px;
+          height: 250px;;
+          border-radius: 8px;
+           }
 
-        /* Header */
+     
         header {
-            background: linear-gradient(to right, #007bff, #6c757d); /* Modern gradient */
+            background: linear-gradient(blue,rgb(148, 145, 145));
             color: white;
-            text-align: center;
-            padding: 30px;
-            margin: 20px auto;
-            width: 90%; /* Adjust width for responsiveness */
+            text-align: left;
+            padding: 50px;
+            margin: 50px auto;
+            width: 80%;
+            height: auto;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
         }
 
+      
         h1 {
             font-size: xx-large;
             color:white;
@@ -87,19 +72,18 @@
         nav button {
             margin: 0 10px;
             padding: 12px 25px;
-            background-color: #007bff; /* Use a more modern blue */
+            background-color: blue;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             font-size: large;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
         }
 
         nav button:hover {
-            background-color: #0056b3; /* Darker blue on hover */
-            transform: scale(1.1); /* Slightly enlarge on hover */
+            background-color:rgb(12, 12, 76);
+            transform: scale(1.05);
         }
 
         section {
@@ -112,28 +96,24 @@
 
         .founders-container-horizontal {
             display: flex;
-            flex-direction: row; /* Ensure horizontal alignment */
-            gap: 30px; /* Add spacing between cards */
+            flex-direction: row;
+            gap: 50px;
             padding: 50px;
-            justify-content: center; /* Center the cards horizontally */
-            align-items: flex-start; /* Align cards to the top */
-            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+            justify-content: center;
+            align-items: center;
         }
 
         .founder-card {
             background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px; /* Slightly rounded corners */
+            padding: 40px;
+            border-radius: 20px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-            width: 300px; /* Increased width */
-            height: 350px; /* Increased height */
+            width: 400px;
             text-align: center;
+            width: 480px;
+            height: 480px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             animation: fadeIn 1s ease-in-out;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between; /* Space out content evenly */
-            align-items: center;
         }
 
         .founder-card:hover {
@@ -142,18 +122,18 @@
         }
 
         .founder-card img {
-            width: 120px; /* Larger image for better balance */
-            height: 120px;
+            width: 200px;
+            height: 200px;
             object-fit: cover;
-            border-radius: 50%; /* Circular image */
-            border: 3px solid #007bff; /* Match the theme */
-            margin-bottom: 10px;
+            border-radius: 50%;
+            border: 5px solid black;
+            margin-bottom: 20px;
         }
 
         .card-content h1 {
-            font-size: large; /* Increased font size */
-            color: black;
-            margin: 5px 0;
+            font-size: large;
+            color:black;
+            margin-bottom: 10px;
         }
 
         .title {
@@ -164,9 +144,9 @@
         }
 
         .card-content p {
-            font-size: medium; /* Increased font size */
+            font-size: medium;
             color: black;
-            line-height: 1.6;
+            line-height: 1.8;
         }
         #SignIn {
             padding: 20px;
@@ -180,44 +160,38 @@
         }
       /* Footer Styling */
         footer {
-            background-color: #222;
-            color: #ccc;
+            background-color: #333;
+            color: white;
             text-align: center;
-            padding: 20px;
+            padding: 10px;
             font-size: 0.9em;
+            justify-content: center;
+        }
+
+        footer p {
+            margin: 10px 0;
         }
 
         footer a {
-            color: #007bff;
+            color: #0077c2;
             text-decoration: none;
             margin: 0 10px;
             font-size: 1.2em;
-            transition: color 0.3s ease;
         }
 
         footer a:hover {
-            color: #0056b3;
+            color: #005fa3;
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
             .founders-container-horizontal {
-                flex-wrap: wrap; /* Allow wrapping for smaller screens */
-                gap: 20px; /* Adjust spacing for smaller screens */
+                flex-direction: column;
+                gap: 30px;
             }
 
             .founder-card {
-                width: 90%; /* Adjust width for smaller screens */
-                height: auto; /* Allow height to adjust dynamically */
-            }
-
-            header {
-                width: 95%; /* Adjust header width for smaller screens */
-            }
-
-            nav button {
-                font-size: medium;
-                padding: 10px 20px;
+                width: 90%;
             }
         }
 
@@ -231,33 +205,6 @@
                 opacity: 1;
                 transform: translateY(0);
             }
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            align-items: center;
-        }
-
-        form input, form button {
-            width: 90%;
-            padding: 10px;
-            font-size: 1em;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        form button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        form button:hover {
-            background-color: #0056b3;
         }
     </style>
 </head>
@@ -276,12 +223,12 @@
 </div>   
 
     <nav>
-        <button onclick="showSection('Founders')">THE MARTS OFFICIALS</button>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<button onclick="showSection('Founders')">THE MARTS OFFICIALS</button>
     </nav>
 
     <div id="container">
         <section id="Founders">
-            <div class="founders-container-horizontal">
+            <div class="founders-container founders-container-horizontal">
                  <div class="founder-card">
                     <img src="img.Victor.jpg" alt="Victor Martin Profile Photo">
                     <div class="card-content">
@@ -295,7 +242,7 @@
                     <div class="card-content">
                         <h1>COLINCE LUPIN</h1>
                         <h2 class="title">Chief Executive Officer-CEO</h2>
-                        <p>"Rising with wolf-like strength, guided by Lupin's wisdom"</p>
+                        <p>"In the wilderness of challenges, I rise with the strength of a wolf, led by the wisdom of Lupin."</p>
                     </div>
                 </div>
 
@@ -313,15 +260,15 @@
         </section>
     </div>
 
-    <header>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<header>
         <p>Welcome to The Marts Coders Headquarters, a hub for aspiring developers to learn coding, build impactful projects, earn certifications, and ultimately secure amazing jobs. Our mission is to position Kenya as a global tech hub through mentorship, groundbreaking projects, and innovative solutions. </p>
         <h2>🛠 What We Do</h2>
         <p style="text-align: left;"><em>We specialize in:</em></p>
       <ul>
-         <li>Teaching Coding Skills: Offering resources and mentorship to help developers improve.</li>
-         <li>Building Projects: Hands-on opportunities to build innovative, real-world solutions.</li>
-         <li>Certifications: Equipping developers with recognized credentials to boost their careers.</li>
-         <li>Career Support: Preparing developers to excel in their professional journeys.</li>
+         </li>Teaching Coding Skills: Offering resources and mentorship to help developers improve.</li>
+         </li>Building Projects: Hands-on opportunities to build innovative, real-world solutions.</li>
+         </li>Certifications: Equipping developers with recognized credentials to boost their careers.</li>
+         </li>Career Support: Preparing developers to excel in their professional journeys.</li>
      </ul>
 
 
@@ -336,7 +283,7 @@
     </header>
 
     <nav>
-        <button onclick="showSection('SignIn')">Get Started</button>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<button onclick="showSection('SignIn')">Get Started</button>
     </nav>
 
     <section id="SignIn">
@@ -360,7 +307,7 @@
     <footer>
         <p style="text-align: center;">@THE MARTS CODERS &gt;&gt;&gt; Attached to Machines</p>
         <p style="text-align: center;">Follow us on:
-            <a href="https://twitter.com/TheMartsCoders" target="_blank">X</a>
+            <a href="https://twitter.com/TheMartsCoders" target="_blank">Twitter</a>
             <a href="https://facebook.com/TheMartsCoders" target="_blank">Facebook</a>
             <a href="https://instagram.com/TheMartsCoders" target="_blank">Instagram</a>
         </p>
