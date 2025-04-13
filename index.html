@@ -15,13 +15,25 @@
     <style>
       
         body {
-            background-color: rgb(252, 247, 247);
-            color: black;
+            background-color: black;
+            color:white;
             margin: 0;
             padding: 0;
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
         }
+        .image-text-container {
+          display: flex;
+          align-items: center; /* vertically center text with image */
+          gap: 15px; /* space between image and text */
+          margin: 40px;
+          }
+
+        .image-text-container img {
+          width: 200px;
+          height: 250px;;
+          border-radius: 8px;
+           }
 
      
         header {
@@ -38,7 +50,7 @@
       
         h1 {
             font-size: xx-large;
-            color: black;
+            color:white;
             text-align: center;
             font-weight: 700;
         }
@@ -198,14 +210,17 @@
 </head>
 
 <body>
-
+<div class="image-text-container">
+    <img src="img.logo.jpg" alt="TheMartsLogo">
     <div>
         <h1>Learn coding with The Marts</h1>
         <h1>Build Projects</h1>
         <h1>Earn Certifications</h1>
         <h1>Get Jobs</h1>
-        <p style="text-align: center;font-size: larger;">Shaping the future of global tech through mentorship, innovation, and transformative solutions.</p>
-    </div>   
+        <p style="text-align: center;font-size: larger;">Our goal is to position Kenya as a global tech hub by mentoring upcoming developers, 
+            contributing to groundbreaking projects, and innovating solutions that solve real-world challenges.</p>
+    </div>
+</div>   
 
     <nav>
         <button onclick="showSection('Founders')">THE MARTS OFFICIALS</button>
@@ -273,7 +288,7 @@
 
     <section id="SignIn">
         <form>
-            <h3 style="text-align: center;font-size: x-large;">GET TO US</h3>
+            <h3 style="text-align: center;font-size: x-large;">Sign In</h3>
             
             <br><input type="text" id="name" name="name" placeholder="Enter Full Name" required>
            <br> <input type="email" id="email" name="email" placeholder="Enter Email Address" required>
