@@ -17,14 +17,23 @@
             scroll-behavior: smooth;
         }
       
+        /* General Layout */
         body {
             background-color: black;
-            color:white;
+            color: white;
             margin: 0;
             padding: 0;
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
         }
+
+        .container {
+            max-width: 1200px; /* Limit the width of the content */
+            margin: 0 auto; /* Center the content */
+            padding: 20px; /* Add padding for spacing */
+        }
+
+        /* Image and Text Container */
         .image-text-container {
             display: flex;
             flex-direction: column;
@@ -42,11 +51,11 @@
             border-radius: 8px;
         }
 
-     
+        /* Header */
         header {
             background: linear-gradient(to right, #007bff, #6c757d); /* Modern gradient */
             color: white;
-            text-align: center; /* Center-align text */
+            text-align: center;
             padding: 30px;
             margin: 20px auto;
             width: 90%; /* Adjust width for responsiveness */
@@ -54,7 +63,6 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
         }
 
-      
         h1 {
             font-size: xx-large;
             color:white;
@@ -104,23 +112,28 @@
 
         .founders-container-horizontal {
             display: flex;
-            flex-direction: row;
-            gap: 30px; /* Adjust spacing */
+            flex-direction: row; /* Ensure horizontal alignment */
+            gap: 30px; /* Add spacing between cards */
             padding: 50px;
-            justify-content: center;
-            align-items: center;
+            justify-content: center; /* Center the cards horizontally */
+            align-items: flex-start; /* Align cards to the top */
             flex-wrap: wrap; /* Allow wrapping for smaller screens */
         }
 
         .founder-card {
             background-color: #ffffff;
             padding: 20px;
-            border-radius: 20px;
+            border-radius: 10px; /* Slightly rounded corners */
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-            width: 300px; /* Adjust width for better responsiveness */
+            width: 250px; /* Set a fixed width */
+            height: 250px; /* Set the same height to make it square */
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             animation: fadeIn 1s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Space out content evenly */
+            align-items: center;
         }
 
         .founder-card:hover {
@@ -129,18 +142,18 @@
         }
 
         .founder-card img {
-            width: 150px; /* Adjust size for better balance */
-            height: 150px;
+            width: 100px; /* Smaller image for balance */
+            height: 100px;
             object-fit: cover;
-            border-radius: 50%;
-            border: 5px solid #007bff; /* Match the theme */
-            margin-bottom: 20px;
+            border-radius: 50%; /* Circular image */
+            border: 3px solid #007bff; /* Match the theme */
+            margin-bottom: 10px;
         }
 
         .card-content h1 {
-            font-size: large;
-            color:black;
-            margin-bottom: 10px;
+            font-size: medium;
+            color: black;
+            margin: 5px 0;
         }
 
         .title {
@@ -151,9 +164,9 @@
         }
 
         .card-content p {
-            font-size: medium;
+            font-size: small;
             color: black;
-            line-height: 1.8;
+            line-height: 1.4;
         }
         #SignIn {
             padding: 20px;
@@ -189,12 +202,22 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             .founders-container-horizontal {
-                flex-direction: column;
-                gap: 30px;
+                flex-wrap: wrap; /* Allow wrapping for smaller screens */
+                gap: 20px; /* Adjust spacing for smaller screens */
             }
 
             .founder-card {
-                width: 90%;
+                width: 90%; /* Adjust width for smaller screens */
+                height: auto; /* Allow height to adjust dynamically */
+            }
+
+            header {
+                width: 95%; /* Adjust header width for smaller screens */
+            }
+
+            nav button {
+                font-size: medium;
+                padding: 10px 20px;
             }
         }
 
@@ -258,7 +281,7 @@
 
     <div id="container">
         <section id="Founders">
-            <div class="founders-container founders-container-horizontal">
+            <div class="founders-container-horizontal">
                  <div class="founder-card">
                     <img src="img.Victor.jpg" alt="Victor Martin Profile Photo">
                     <div class="card-content">
@@ -272,7 +295,7 @@
                     <div class="card-content">
                         <h1>COLINCE LUPIN</h1>
                         <h2 class="title">Chief Executive Officer-CEO</h2>
-                        <p>"In the wilderness of challenges, I rise with the strength of a wolf, led by the wisdom of Lupin."</p>
+                        <p>"Rising with wolf-like strength, guided by Lupin's wisdom"</p>
                     </div>
                 </div>
 
